@@ -57,7 +57,7 @@
   			<section class="tiles">
   				<article class="style1">
   					<span class="image">
-              <img src="{{ asset('phantom/images/pic01.jpg') }}">
+              <img src="{{ asset('phantom/images/pic02.jpg') }}">
   					</span>
   					<a href="generic.html">
   						<h2>Magna</h2>
@@ -79,7 +79,7 @@
   				</article>
   				<article class="style3">
   					<span class="image">
-              <img src="{{ asset('phantom/images/pic03.jpg') }}">
+              <img src="{{ asset('phantom/images/pic02.jpg') }}">
   					</span>
   					<a href="generic.html">
   						<h2>Feugiat</h2>
@@ -188,13 +188,10 @@
   				<ul class="icons">
   					<li><a href="https://www.instagram.com/primetime_graphic/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
   					<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-  					<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-  					<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phosne</span></a></li>
-  					<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
   				</ul>
   			</section>
   			<ul class="copyright">
-  				<li>&copy; PrimeTime Graphics. All rights reserved</li>
+  				<li>&copy; PrimeTime Graphics 2020. All rights reserved</li>
   			</ul>
   		</div>
   	</footer>
