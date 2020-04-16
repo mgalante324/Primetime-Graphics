@@ -13,7 +13,7 @@
     <body class="is-preload">
       @yield('content')
 
-<script src="{{ asset('js/app.js') }}" defer></script>
+      <script src="{{ asset('js/app.js') }}" defer></script>
 
       <!-- Scripts -->
       <script src="{{ asset('phantom/assets/js/jquery.min.js') }}"></script>
