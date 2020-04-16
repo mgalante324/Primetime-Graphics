@@ -99,7 +99,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		/* background: #AAAAAA; */
+		/* background: #0067AC; */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2690,6 +2691,7 @@ input, select, textarea {
 
 				.tiles article > a h2 {
 					margin: 0;
+					color: #002D7A;
 				}
 
 				.tiles article > a .content {
@@ -2724,15 +2726,18 @@ input, select, textarea {
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				/* background-color: #c75b9b; */
+				background-color: #c6c6c6;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
+				/* background-color: #ae85ca; */
+				background-color: #c6c6c6;
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				/* background-color: #8499e7; */
+				background-color: #c6c6c6;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -2836,6 +2841,13 @@ input, select, textarea {
 
 	#header {
 		padding: 8em 0 0.1em 0 ;
+		/* background: url("../../../../images/PrimeTimeGraphics_StandardBackdrop.png") no-repeat center center fixed; */
+		/* -webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; */
+		margin-bottom: 2em;
+		color: #AAAAAA;
 	}
 
 		#header .logo {
@@ -2875,6 +2887,15 @@ input, select, textarea {
 			z-index: 10000;
 		}
 
+		#header .title {
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		#header .subtitle {
+			text-align: center;
+		}
+
 		#header nav .menu {
 			position: fixed;
 			right: 2em;
@@ -2907,7 +2928,7 @@ input, select, textarea {
 						height: 3em;
 						line-height: 3em;
 						padding: 0 1.5em;
-						background-color: rgba(255, 255, 255, 0.5);
+						/* background-color: rgba(255, 255, 255, 0.5); */
 						border-radius: 4px;
 						border: 0;
 						font-size: 0.8em;
@@ -2987,12 +3008,11 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 		-ms-transition: opacity 0.45s ease;
 		transition: opacity 0.45s ease;
 		opacity: 1;
-		background: url("../../../../images/PrimeTimeGraphics_StandardBackdrop.png") no-repeat center center fixed;
+		background: url("../../../../images/PrimeTimeGraphics_StandardBackdrop.png") no-repeat center center fixed; */
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-
 	}
 
 	#menu {
