@@ -42,11 +42,11 @@
   	<nav id="menu">
   		<h2>Menu</h2>
   		<ul>
-  			<li><a href="index.html">Home</a></li>
-  			<li><a href="generic.html">Ipsum veroeros</a></li>
-  			<li><a href="generic.html">Tempus etiam</a></li>
-  			<li><a href="generic.html">Consequat dolor</a></li>
-  			<li><a href="elements.html">Elements</a></li>
+  			<li><a href="/">Home</a></li>
+  			<li><a href="/portfolio">Portfolio</a></li>
+  			<li><a href="/about">About</a></li>
+  			<li><a href="/shop">Shop</a></li>
+  			<li><a href="/contact">Contact</a></li>
   		</ul>
   	</nav>
 

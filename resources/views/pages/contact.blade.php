@@ -4,6 +4,42 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
+  <!-- Header -->
+    <header id="header">
+      <div class="inner">
+
+        <!-- Nav -->
+          <nav>
+            <!-- Logo -->
+            <div class="logo-title">
+              <a href="/" class="logo">
+                <span class="symbol"><img src="{{ asset('phantom/images/logo.svg') }}" alt="" /></span><span class="title">PrimeTime Graphic</span>
+              </a>
+            </div>
+
+            <div class="menu">
+              <ul>
+                <li><a href="#menu">Menu</a></li>
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+    </header>
+
+    <!-- Menu -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="/">Home</a></li>
+    			<li><a href="/portfolio">Portfolio</a></li>
+    			<li><a href="/about">About</a></li>
+    			<li><a href="/shop">Shop</a></li>
+    			<li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+
   <!-- Footer -->
   	<footer id="footer">
   		<div class="inner">
