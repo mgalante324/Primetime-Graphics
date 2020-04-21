@@ -7,7 +7,7 @@
         <title>{{ config('app.name', 'PrimeTime') }}</title>
 
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('../css/index.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/index.css') }}" rel="stylesheet">
     </head>
     <body onload="fadeLogo()">
 
