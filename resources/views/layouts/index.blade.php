@@ -9,8 +9,8 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('../css/index.css') }}" rel="stylesheet">
     </head>
-    <body>
-      
+    <body onload="fadeLogo()">
+
         @yield('content')
 
       <script src="{{ asset('js/app.js') }}" defer></script>

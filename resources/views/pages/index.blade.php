@@ -3,10 +3,9 @@
 @section('content')
 <div class="container-fluid">
   <div class="content">
-        {{-- <img src="{{ asset('../images/PrimeTimeGraphics_AltLogo3.png') }}" class="img-fluid" alt="Logo"> --}}
+    <div class="fade">
         <img src="{{ asset('../images/PrimeTimeGraphics_Logo.png') }}" class="img-fluid" alt="PrimeTime Graphics">
-        {{-- <h1>PRIMETIME</h1>
-        <h3>GRAPHICS</h3> --}}
+    </div>
 
     <div class="links">
       <a href="/portfolio"><div class="link-text">Portfolio</div></a>
