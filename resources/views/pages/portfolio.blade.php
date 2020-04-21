@@ -20,7 +20,7 @@
             <!-- Logo -->
             <div class="logo-title">
               <a href="/" class="logo">
-                <span class="symbol"><img src="{{ asset('phantom/images/logo.svg') }}" alt="" /></span><span class="title">PrimeTime Graphic</span>
+                <span class="symbol"><img src="{{ asset('phantom/images/logo.svg') }}" alt="" /></span><span class="title">PrimeTime Graphics</span>
               </a>
             </div>
 
