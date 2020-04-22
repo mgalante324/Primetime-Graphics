@@ -6,6 +6,7 @@
 
         <title>{{ config('app.name', 'PrimeTime') }}</title>
 
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('phantom/assets/css/main.css') }}" rel="stylesheet">
         <noscript><link rel="stylesheet" href="{{ asset('phantom/assets/css/noscript.css') }}" /></noscript>
 
