@@ -4,7 +4,7 @@
 <div class="container-fluid">
   <div class="content">
     <div class="fade">
-        <img src="{{ asset('../images/PrimeTimeGraphics_Logo.png') }}" class="img-fluid" alt="PrimeTime Graphics">
+        <img src="{{ asset('images/PrimeTimeGraphics_Logo.png') }}" class="img-fluid" alt="PrimeTime Graphics">
     </div>
 
     <div class="links">
