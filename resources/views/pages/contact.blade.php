@@ -43,9 +43,9 @@
 
    <div class="row">
     <div class="contact-left">
-      <h1 class="get-in-touch">Get in Touch</h1>
+      <h1 class="get-in-touch fade">Get in Touch</h1>
     </div>
-    <div class="contact-right">
+    <div class="contact-right fade">
       <!-- Header -->
        <header id="header">
          <div class="inner">
