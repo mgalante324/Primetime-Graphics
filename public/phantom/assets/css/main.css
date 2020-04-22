@@ -1,5 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@font-face {
+  src: url("../../../fonts/Jersey M54.ttf");
+  font-family: Jersey;
+}
 
 /*
 	Phantom by HTML5 UP
@@ -118,7 +122,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #585858;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+		font-family: Jersey;
+		font-style: italic;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
@@ -2859,6 +2865,7 @@ input, select, textarea {
 		#header .title {
 			text-align: center;
 			text-transform: uppercase;
+			letter-spacing: 0.05em;
 		}
 
 		#header .subtitle {
