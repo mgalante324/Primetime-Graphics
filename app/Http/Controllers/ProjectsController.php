@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use App\Category;
 
 class ProjectsController extends Controller
 {
@@ -14,9 +15,11 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = Project::where('category','NFL')->get();
+        // $projects = Project::where('category','NFL')->get();
+        //
+        // return view('projects.index')->with('projects', $projects);
 
-        return view('projects.index')->with('projects', $projects);
+        return redirect('/portfolio');
     }
 
     /**

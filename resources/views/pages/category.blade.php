@@ -8,13 +8,6 @@
   	<header id="header">
   		<div class="inner">
 
-  			<!-- Logo -->
-        {{-- <div class="logo-title">
-          <a href="/" class="logo">
-            <span class="symbol"><img src="{{ asset('phantom/images/logo.svg') }}" alt="" /></span><span class="title">PrimeTime Graphics</span>
-          </a>
-        </div> --}}
-
   			<!-- Nav -->
   				<nav>
             <!-- Logo -->
@@ -32,7 +25,7 @@
   				</nav>
 
           <header>
-            <h1 class="title">Portfolio</h1>
+            <h1 class="title">{{$category->name}}</h1>
           </header>
 
   		</div>
@@ -50,24 +43,25 @@
   		</ul>
   	</nav>
 
+
   <!-- Main -->
   	<div id="main">
   		<div class="inner">
   			<section class="tiles">
 
-          @if(count($categories) > 0)
-            @foreach($categories as $category)
+          @if(count($projects) > 0)
+            @foreach($projects as $project)
               <article class="style1">
       					<span class="image">
                   <img src="{{ asset('phantom/images/pic02.jpg') }}">
       					</span>
-      					<a href="/portfolio/{{ $category->id }}">
-      						<h2>{{ $category->name }}</h2>
+      					<a href="/projects/{{ $project->id }}">
+      						<h2>{{ $project->name }}</h2>
       					</a>
       				</article>
             @endforeach
           @else
-            <p>No categories found.</p>
+            <p>No projects found.</p>
           @endif
 
   			</section>
