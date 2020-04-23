@@ -4,43 +4,6 @@
 <!-- Wrapper -->
 <div id="wrapper">
   <div class="container-fluid">
-    {{--
-    <!-- Header -->
-     <header id="header">
-       <div class="inner">
-
-         <!-- Nav -->
-           <nav>
-             <!-- Logo -->
-             <div class="logo-title">
-               <a href="/" class="logo">
-                 <span class="symbol"><img src="{{ asset('phantom/images/logo.svg') }}" alt="" /></span><span class="title">PrimeTime Graphics</span>
-               </a>
-             </div>
-
-             <div class="menu">
-               <ul>
-                 <li><a href="#menu">Menu</a></li>
-               </ul>
-             </div>
-           </nav>
-
-       </div>
-     </header>
-
-     <!-- Menu -->
-       <nav id="menu">
-         <h2>Menu</h2>
-         <ul>
-           <li><a href="/">Home</a></li>
-           <li><a href="/portfolio">Portfolio</a></li>
-           <li><a href="/about">About</a></li>
-           <li><a href="/shop">Shop</a></li>
-           <li><a href="/contact">Contact</a></li>
-         </ul>
-       </nav> --}}
-
-
    <div class="row">
     <div class="contact-left">
       <h1 class="get-in-touch fade">Get in Touch</h1>
