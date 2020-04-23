@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Project;
 
 class ProjectsController extends Controller
 {
@@ -13,7 +14,9 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        //
+        $projects = Project::where('category','NFL')->get();
+
+        return view('projects.index')->with('projects', $projects);
     }
 
     /**
@@ -45,7 +48,8 @@ class ProjectsController extends Controller
      */
     public function show($id)
     {
-        //
+        $project = Project::find($id);
+        return view('projects.show')->with('project', $project);
     }
 
     /**

@@ -19,4 +19,4 @@ Route::get('/portfolio', 'PagesController@portfolio');
 Route::get('/contact', 'PagesController@contact');
 
 /* CRUD */
-// Route::resource('projects','ProjectsController');
+Route::resource('projects','ProjectsController');

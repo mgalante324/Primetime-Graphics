@@ -58,8 +58,8 @@
   					<span class="image">
               <img src="{{ asset('phantom/images/pic02.jpg') }}">
   					</span>
-  					<a href="generic.html">
-  						<h2>Magna</h2>
+  					<a href="/projects/nfl">
+  						<h2>NFL</h2>
   						<div class="content">
   							<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
   						</div>
