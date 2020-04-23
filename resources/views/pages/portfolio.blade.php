@@ -54,72 +54,22 @@
   	<div id="main">
   		<div class="inner">
   			<section class="tiles">
-  				<article class="style1">
-  					<span class="image">
-              <img src="{{ asset('phantom/images/pic02.jpg') }}">
-  					</span>
-  					<a href="/projects/nfl">
-  						<h2>NFL</h2>
-  						<div class="content">
-  							<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-  						</div>
-  					</a>
-  				</article>
-  				<article class="style1">
-  					<span class="image">
-              <img src="{{ asset('phantom/images/pic02.jpg') }}">
-  					</span>
-  					<a href="generic.html">
-  						<h2>Lorem</h2>
-  						<div class="content">
-  							<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-  						</div>
-  					</a>
-  				</article>
-  				<article class="style1">
-  					<span class="image">
-              <img src="{{ asset('phantom/images/pic02.jpg') }}">
-  					</span>
-  					<a href="generic.html">
-  						<h2>Feugiat</h2>
-  						<div class="content">
-  							<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-  						</div>
-  					</a>
-  				</article>
-  				<article class="style1">
-  					<span class="image">
-              <img src="{{ asset('phantom/images/pic02.jpg') }}">
-  					</span>
-  					<a href="generic.html">
-  						<h2>Tempus</h2>
-  						<div class="content">
-  							<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-  						</div>
-  					</a>
-  				</article>
-  				<article class="style1">
-  					<span class="image">
-              <img src="{{ asset('phantom/images/pic02.jpg') }}">
-  					</span>
-  					<a href="generic.html">
-  						<h2>Aliquam</h2>
-  						<div class="content">
-  							<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-  						</div>
-  					</a>
-  				</article>
-  				<article class="style1">
-  					<span class="image">
-              <img src="{{ asset('phantom/images/pic02.jpg') }}">
-  					</span>
-  					<a href="generic.html">
-  						<h2>Veroeros</h2>
-  						<div class="content">
-  							<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-  						</div>
-  					</a>
-  				</article>
+
+          @if(count($categories) > 0)
+            @foreach($categories as $category)
+              <article class="style1">
+      					<span class="image">
+                  <img src="{{ asset('phantom/images/pic02.jpg') }}">
+      					</span>
+      					<a href="/">
+      						<h2>{{ $category->name }}</h2>
+      					</a>
+      				</article>
+            @endforeach
+          @else
+            <p>No categories found.</p>
+          @endif
+
   			</section>
   		</div>
   	</div>

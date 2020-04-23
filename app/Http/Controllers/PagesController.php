@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
 
 class PagesController extends Controller
 {
@@ -11,7 +12,8 @@ class PagesController extends Controller
     }
 
     public function portfolio() {
-      return view('pages.portfolio');
+      $categories = Category::all();
+      return view('pages.portfolio')->with('categories', $categories);;
     }
 
     public function contact() {
