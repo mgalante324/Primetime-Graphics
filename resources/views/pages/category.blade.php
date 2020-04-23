@@ -55,7 +55,8 @@
       					<span class="image">
                   <img src="{{ asset('phantom/images/pic02.jpg') }}">
       					</span>
-      					<a href="/projects/{{ $project->id }}">
+      					{{-- <a href="/projects/{{ $project->id }}"> --}}
+                <a href="/portfolio/{{ $category->name }}/{{ $project->id }}">
       						<h2>{{ $project->name }}</h2>
       					</a>
       				</article>

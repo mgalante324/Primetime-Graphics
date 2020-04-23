@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@index');
 Route::get('/portfolio', 'PagesController@portfolio');
 Route::get('/portfolio/{category}','PagesController@category');
+Route::get('/portfolio/{category}/{id}','ProjectsController@show');
 Route::get('/contact', 'PagesController@contact');
 
 /* CRUD */
