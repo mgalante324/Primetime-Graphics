@@ -8,13 +8,6 @@
   	<header id="header">
   		<div class="inner">
 
-  			<!-- Logo -->
-        {{-- <div class="logo-title">
-          <a href="/" class="logo">
-            <span class="symbol"><img src="{{ asset('phantom/images/logo.svg') }}" alt="" /></span><span class="title">PrimeTime Graphics</span>
-          </a>
-        </div> --}}
-
   			<!-- Nav -->
   				<nav>
             <!-- Logo -->
@@ -61,7 +54,7 @@
       					<span class="image">
                   <img src="{{ asset('phantom/images/pic02.jpg') }}">
       					</span>
-      					<a href="/portfolio/{{ $category->id }}">
+      					<a href="/portfolio/{{ $category->name }}">
       						<h2>{{ $category->name }}</h2>
       					</a>
       				</article>

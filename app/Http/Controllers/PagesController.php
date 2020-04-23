@@ -21,10 +21,13 @@ class PagesController extends Controller
       return view('pages.contact');
     }
 
-    public function category(Request $request, $id) {
+    public function category(Request $request, $name) {
 
-        $category = Category::find($id);
-        $category_name = $category->name;
+        $category = Category::where('name', $name)->get();
+        foreach ($category as $cat) {
+          $id = $cat->id;
+          $category_name = $cat->name;
+        }
 
        $data = array(
          'category' => Category::find($id),
