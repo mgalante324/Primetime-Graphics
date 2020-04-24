@@ -48,7 +48,7 @@
   	<div id="main">
   		<div class="inner">
 
-          <form method="post" action="{{ route('projects.store') }}">
+          <form method="post" action="{{ route('projects.store') }}" enctype="multipart/form-data">
             @csrf
             <div class="fields">
               <div class="field half">
@@ -64,12 +64,11 @@
                   @endforeach
                 </select>
               </div>
-              <div class="field">
-                <label for="image">Filename</label>
-                <input type="text" name="image" id="image" placeholder="Filename with extension"></input>
+              <div class="field half">
+                <label for="file">Image Upload</label>
+                <input type="file" name="file" id="file"></input>
               </div>
             </div>
-            <h3>FILE UPLOAD WILL GO HERE</h3>
             <ul class="actions">
               <li><input type="submit" value="Submit" class="primary" /></li>
             </ul>

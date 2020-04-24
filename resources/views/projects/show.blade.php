@@ -43,12 +43,11 @@
   		</ul>
   	</nav>
 
-    <?php $path = 'portfolio_projects/' . $project->image; ?>
 
   <!-- Main -->
   	<div id="main">
   		<div class="inner">
-          <img src="{{ asset($path) }}" class="img-fluid" alt="PrimeTime Graphics">
+          <img src="/storage/portfolio_images/{{$project->image}}"class="img-fluid" alt="PrimeTime Graphics">
   		</div>
   	</div>
 
