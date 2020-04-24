@@ -52,10 +52,10 @@
           @if(count($projects) > 0)
             @foreach($projects as $project)
               <article class="style1">
+                <?php $url = 'portfolio_projects/' . $project->image; ?>
       					<span class="image">
-                  <img src="{{ asset('phantom/images/pic02.jpg') }}">
+                  <img src="{{ asset($url) }}">
       					</span>
-      					{{-- <a href="/projects/{{ $project->id }}"> --}}
                 <a href="/portfolio/{{ $category->name }}/{{ $project->id }}">
       						<h2>{{ $project->name }}</h2>
       					</a>
