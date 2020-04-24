@@ -41,7 +41,21 @@ class ProjectsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+          'name' => 'required',
+          'category' => 'required',
+          'image' => 'required'
+        ]);
+
+        $project = new Project;
+
+        $project->image = $request->input('image');
+        $project->name = $request->input('name');
+        $project->category = $request->input('category');
+
+        $project->save();
+
+        return redirect('/portfolio')->with('success', 'Project Added');
     }
 
     /**

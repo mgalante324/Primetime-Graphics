@@ -12,6 +12,9 @@
 
     </head>
     <body class="is-preload">
+      <div class="container">
+        @include('inc.messages')
+      </div>
       @yield('content')
 
       <script src="{{ asset('js/app.js') }}" defer></script>

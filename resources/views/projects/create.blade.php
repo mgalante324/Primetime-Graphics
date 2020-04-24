@@ -69,8 +69,9 @@
                 <input type="text" name="image" id="image" placeholder="Filename with extension"></input>
               </div>
             </div>
+            <h3>FILE UPLOAD WILL GO HERE</h3>
             <ul class="actions">
-              <li><input type="submit" value="Sumbit" class="primary" /></li>
+              <li><input type="submit" value="Submit" class="primary" /></li>
             </ul>
           </form>
 
