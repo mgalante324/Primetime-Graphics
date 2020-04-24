@@ -43,11 +43,12 @@
   		</ul>
   	</nav>
 
+    <?php $path = 'portfolio_projects/' . $project->image; ?>
 
   <!-- Main -->
   	<div id="main">
   		<div class="inner">
-          <p>Full size image will go here.</p>
+          <img src="{{ asset($path) }}" class="img-fluid" alt="PrimeTime Graphics">
   		</div>
   	</div>
 
