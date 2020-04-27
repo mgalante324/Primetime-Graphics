@@ -76,7 +76,7 @@ class ProjectsController extends Controller
         $project->category = $request->input('category');
         $project->save();
 
-        return redirect('/portfolio')->with('success', 'Project Added');
+        return redirect('/home')->with('success', 'Project Added');
     }
 
     /**
@@ -151,7 +151,7 @@ class ProjectsController extends Controller
         $project->category = $request->input('category');
         $project->save();
 
-        return redirect('/portfolio')->with('success', 'Project Updated');
+        return redirect('/home')->with('success', 'Project Updated');
     }
 
     /**
@@ -165,6 +165,6 @@ class ProjectsController extends Controller
         $project = Project::find($id);
         $project->delete();
 
-        return redirect('/portfolio')->with('success', 'Project Deleted');
+        return redirect('/home')->with('success', 'Project Deleted');
     }
 }

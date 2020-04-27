@@ -50,7 +50,7 @@
 
 
           <!-- To be moved to the user dashboard later on -->
-          <a href="/{{$project->id}}/edit" class="primary">
+          <a href="projects/{{$project->id}}/edit" class="primary">
             <button class="primary">Edit</button>
           </a>
 
