@@ -99,7 +99,13 @@ class ProjectsController extends Controller
      */
     public function edit($id)
     {
-        //
+
+      $data = array(
+        'categories' => Category::all(),
+        'project' => Project::find($id)
+      );
+
+      return view('projects.edit')->with($data);
     }
 
     /**
@@ -111,7 +117,41 @@ class ProjectsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+          'name' => 'required',
+          'category' => 'required'
+        ]);
+
+        // Handle File Upload
+        if($request->hasFile('file')) {
+          // Get Filename with the extension
+          $filenameWithExt = $request->file('file')->getClientOriginalName();
+
+          // Get just the filename
+          $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+          // Get just the extension
+          $extension =  $request->file('file')->getClientOriginalExtension();
+
+          // Create the filename to store with current timestamp to prevent duplicates
+          $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+
+          // Upload image
+          $path = $request->file('file')->storeAs('public/portfolio_images', $fileNameToStore);
+
+        } else {
+          $fileNameToStore = 'noimage.jpg';
+        }
+
+        // Add new project
+        $project = Project::find($id);
+
+        $project->image = $fileNameToStore;
+        $project->name = $request->input('name');
+        $project->category = $request->input('category');
+        $project->save();
+
+        return redirect('/portfolio')->with('success', 'Project Updated');
     }
 
     /**
