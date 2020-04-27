@@ -25,7 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $projects = Project::all();
-        return view('home')->with('projects', $projects);
+
+        $data = array(
+          'categories' => Category::all(),
+          'projects' => Project::all()
+        );
+
+        return view('home')->with($data);
     }
 }

@@ -5,8 +5,43 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" style="margin-top: 25px;">
-                <div class="card-header">Projects</div>
 
+              <!-- Categories Card -->
+                <div class="card-header">Cateogories</div>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                    <a href="/categories/create" class="btn btn-primary" style="margin-bottom: 25px;">Add a Category</a>
+                    <table class="table">
+                      <tr>
+                        <th>Name</th>
+                        <th>Delete</th>
+                      </tr>
+                      @foreach ($categories as $category)
+                        <tr>
+                          <td>{{ $category->name }}</td>
+                          <td>
+                            <form method="post" action="{{ route('categories.destroy', $category->id) }}">
+                                @csrf
+                                @method('DELETE')
+                                <div class="bootstrap_button">
+                                    <input type="submit" value="Delete" class="btn btn-danger" />
+                                </div>
+                            </form>
+                          </td>
+                        </tr>
+                      @endforeach
+                    </table>
+                </div>
+              </div>
+
+
+              <!-- Projects Card -->
+              <div class="card" style="margin-top: 25px;">
+                <div class="card-header">Projects</div>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -39,6 +74,8 @@
                       @endforeach
                     </table>
                 </div>
+
+
             </div>
         </div>
     </div>
