@@ -27,9 +27,7 @@
                             <form method="post" action="{{ route('categories.destroy', $category->id) }}">
                                 @csrf
                                 @method('DELETE')
-                                <div class="bootstrap_button">
-                                    <input type="submit" value="Delete" class="btn btn-danger" />
-                                </div>
+                                  <input type="submit" value="Delete" class="btn btn-danger" />
                             </form>
                           </td>
                         </tr>
@@ -65,9 +63,7 @@
                             <form method="post" action="{{ route('projects.destroy', $project->id) }}">
                                 @csrf
                                 @method('DELETE')
-                                <div class="bootstrap_button">
                                     <input type="submit" value="Delete" class="btn btn-danger" />
-                                </div>
                             </form>
                           </td>
                         </tr>
