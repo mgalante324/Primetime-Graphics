@@ -63,7 +63,7 @@
                   </div>
                 </div>
                 <ul class="actions">
-                  <li><input type="submit" value="Send" class="primary" /></li>
+                  <li><input type="submit" value="Send" class="button primary" /></li>
                 </ul>
               </form>
               <ul class="icons">

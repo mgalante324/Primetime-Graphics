@@ -1,4 +1,4 @@
-@extends('layouts.app2')
+@extends('layouts.app')
 
 @section('content')
 <!-- Wrapper -->
@@ -47,19 +47,6 @@
   <!-- Main -->
   	<div id="main">
   		<div class="inner">
-
-
-          <!-- To be moved to the user dashboard later on -->
-          <a href="projects/{{$project->id}}/edit" class="primary">
-            <button class="primary">Edit</button>
-          </a>
-
-          <form method="post" action="{{ route('projects.destroy', $project->id) }}">
-            @csrf
-            @method('DELETE')
-            <input type="submit" value="Delete" class="primary" />
-          </form>
-
           <img src="/storage/portfolio_images/{{$project->image}}"class="img-fluid" alt="PrimeTime Graphics">
   		</div>
   	</div>
