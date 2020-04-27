@@ -25,10 +25,27 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // Count the number of Categories
+        $categories = Category::all();
+        $categoryCount = 0;
+
+        foreach ($categories as $category) {
+          $categoryCount++;
+        }
+
+        //Count the number of projects and projects per category
+        $projects = Project::all();
+        $projectCount = 0;
+
+        foreach ($projects as $project) {
+          $projectCount++;
+        }
 
         $data = array(
-          'categories' => Category::all(),
-          'projects' => Project::all()
+          'categoryCount' => $categoryCount,
+          'projectCount' => $projectCount,
+          'categories' => $categories,
+          'projects' => $projects
         );
 
         return view('home')->with($data);

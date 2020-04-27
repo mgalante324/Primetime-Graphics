@@ -4,11 +4,20 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card" style="margin-top: 25px;">
+          <div class="numbers">
+            <h3>You have {{ $categoryCount }} categories.</h3>
+            <h3>You have {{ $projectCount }} total projects.</h3>
+          </div>
+        </div>
+    </div>
 
-              <!-- Categories Card -->
-                <div class="card-header">Cateogories</div>
-                <div class="card-body">
+    <div class="row">
+        <div class="col-md-12">
+
+            <!-- Categories Card -->
+            <div class="card" style="margin-top: 25px;">
+              <div class="card-header">Cateogories</div>
+              <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -33,47 +42,48 @@
                         </tr>
                       @endforeach
                     </table>
-                </div>
               </div>
+          </div>
 
 
-              <!-- Projects Card -->
-              <div class="card" style="margin-top: 25px;">
-                <div class="card-header">Projects</div>
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                    <a href="/projects/create" class="btn btn-primary" style="margin-bottom: 25px;">Add a Project</a>
-                    <table class="table table-striped">
+            <!-- Projects Card -->
+          <div class="card" style="margin-top: 25px;">
+              <div class="card-header">Projects</div>
+            <div class="card-body">
+                  @if (session('status'))
+                      <div class="alert alert-success" role="alert">
+                          {{ session('status') }}
+                      </div>
+                  @endif
+                  <a href="/projects/create" class="btn btn-primary" style="margin-bottom: 25px;">Add a Project</a>
+                  <table class="table table-striped">
+                    <tr>
+                      <th>Name</th>
+                      <th>Category</th>
+                      <th>Edit</th>
+                      <th>Delete</th>
+                    </tr>
+                    @foreach ($projects as $project)
                       <tr>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <td>{{ $project->name }}</td>
+                        <td>{{ $project->category }}</td>
+                        <td><a href="/projects/{{ $project->id }}/edit" class="btn btn-primary">Edit</a></td>
+                        <td>
+                          <form method="post" action="{{ route('projects.destroy', $project->id) }}">
+                              @csrf
+                              @method('DELETE')
+                                  <input type="submit" value="Delete" class="btn btn-danger" />
+                          </form>
+                        </td>
                       </tr>
-                      @foreach ($projects as $project)
-                        <tr>
-                          <td>{{ $project->name }}</td>
-                          <td>{{ $project->category }}</td>
-                          <td><a href="/projects/{{ $project->id }}/edit" class="btn btn-primary">Edit</a></td>
-                          <td>
-                            <form method="post" action="{{ route('projects.destroy', $project->id) }}">
-                                @csrf
-                                @method('DELETE')
-                                    <input type="submit" value="Delete" class="btn btn-danger" />
-                            </form>
-                          </td>
-                        </tr>
-                      @endforeach
-                    </table>
-                </div>
-
-
+                    @endforeach
+                  </table>
             </div>
+          </div>
+
         </div>
     </div>
+
 </div>
+
 @endsection
