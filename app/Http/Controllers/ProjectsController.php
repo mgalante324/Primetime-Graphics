@@ -9,6 +9,16 @@ use App\Category;
 class ProjectsController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['show']]);
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -29,6 +39,7 @@ class ProjectsController extends Controller
      */
     public function create()
     {
+
         $categories = Category::all();
         return view('projects.create')->with('categories', $categories);
     }
