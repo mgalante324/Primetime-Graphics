@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Project;
 use App\Category;
 
@@ -156,8 +157,10 @@ class ProjectsController extends Controller
         $project = Project::find($id);
 
         if($request->hasFile('file')) {
+          Storage::delete('public/portfolio_images/'.$project->image);
           $project->image = $fileNameToStore;
         }
+
         $project->name = $request->input('name');
         $project->category = $request->input('category');
         $project->save();
@@ -174,8 +177,13 @@ class ProjectsController extends Controller
     public function destroy($id)
     {
         $project = Project::find($id);
-        $project->delete();
 
+        if($project->image != 'noimage.jpg') {
+          // Delete image
+          Storage::delete('public/portfolio_images/'.$project->image);
+        }
+
+        $project->delete();
         return redirect('/home')->with('success', 'Project Deleted');
     }
 }

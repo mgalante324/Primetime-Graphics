@@ -40,6 +40,7 @@
               <div class="field half">
                 <label for="file">Image Upload</label>
                 <input type="file" name="file" id="file"></input>
+                <p>Current Image: {{ $project->image }}</p>
               </div>
             </div>
             <ul class="actions">
