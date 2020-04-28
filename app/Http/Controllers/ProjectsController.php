@@ -150,14 +150,14 @@ class ProjectsController extends Controller
           // Upload image
           $path = $request->file('file')->storeAs('public/portfolio_images', $fileNameToStore);
 
-        } else {
-          $fileNameToStore = 'noimage.jpg';
         }
 
         // Add new project
         $project = Project::find($id);
 
-        $project->image = $fileNameToStore;
+        if($request->hasFile('file')) {
+          $project->image = $fileNameToStore;
+        }
         $project->name = $request->input('name');
         $project->category = $request->input('category');
         $project->save();
