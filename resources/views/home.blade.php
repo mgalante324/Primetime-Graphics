@@ -60,6 +60,7 @@
                     <tr>
                       <th>Name</th>
                       <th>Category</th>
+                      <th>View</th>
                       <th>Edit</th>
                       <th>Delete</th>
                     </tr>
@@ -67,6 +68,7 @@
                       <tr>
                         <td>{{ $project->name }}</td>
                         <td>{{ $project->category }}</td>
+                        <td><a href="/portfolio/{{ $project->category }}/{{ $project->id }}" class="btn btn-success">View</a></td>
                         <td><a href="/projects/{{ $project->id }}/edit" class="btn btn-primary">Edit</a></td>
                         <td>
                           <form method="post" action="{{ route('projects.destroy', $project->id) }}">
