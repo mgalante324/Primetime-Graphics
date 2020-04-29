@@ -37,7 +37,7 @@
                   @endforeach
                 </select>
               </div>
-              <div class="field half">
+              <div class="field">
                 <label for="file">Image Upload</label>
                 <input type="file" name="file" id="file"></input>
                 <p>Current Image: {{ $project->image }}</p>

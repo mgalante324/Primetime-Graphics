@@ -2,21 +2,14 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="numbers">
-            <h3>You have {{ $categoryCount }} categories.</h3>
-            <h3>You have {{ $projectCount }} total projects.</h3>
-          </div>
-        </div>
-    </div>
+
 
     <div class="row">
         <div class="col-md-12">
 
             <!-- Categories Card -->
             <div class="card" style="margin-top: 25px;">
-              <div class="card-header">Cateogories</div>
+              <div class="card-header">{{ $categoryCount }} Categories</div>
               <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -48,7 +41,7 @@
 
             <!-- Projects Card -->
           <div class="card" style="margin-top: 25px;">
-              <div class="card-header">Projects</div>
+              <div class="card-header">{{ $projectCount }} Projects</div>
             <div class="card-body">
                   @if (session('status'))
                       <div class="alert alert-success" role="alert">
