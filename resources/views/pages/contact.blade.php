@@ -20,9 +20,9 @@
              <nav>
                <!-- Logo -->
                <div class="logo-title">
-                 <a href="/" class="logo">
+                 {{-- <a href="/" class="logo">
                    <span class="symbol"><img src="{{ asset('phantom/images/logo.svg') }}" alt="" /></span><span class="title">PrimeTime Graphics</span>
-                 </a>
+                 </a> --}}
                </div>
 
                <div class="menu">
