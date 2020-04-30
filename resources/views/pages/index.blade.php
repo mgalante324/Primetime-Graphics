@@ -9,8 +9,8 @@
 
     <div class="links">
       <a href="/portfolio"><div class="link-text">Portfolio</div></a>
-      <a href="/about"><div class="link-text">About</div></a>
-      <a href="/shop"><div class="link-text">Shop</div></a>
+      {{-- <a href="/about"><div class="link-text">About</div></a>
+      <a href="/shop"><div class="link-text">Shop</div></a> --}}
       <a href="/contact"><div class="link-text">Contact</div></a>
     </div>
   </div>
