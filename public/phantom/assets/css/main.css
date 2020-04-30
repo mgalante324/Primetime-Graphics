@@ -1860,7 +1860,7 @@ input, select, textarea {
 		}
 
 			.icon.style2:before {
-				font-size: 1.1em;
+				font-size: 2em;
 			}
 
 			.icon.style2:hover {
@@ -1871,6 +1871,10 @@ input, select, textarea {
 			.icon.style2:active {
 				background-color: rgba(242, 132, 158, 0.1);
 			}
+
+      .icon-bottom {
+        bottom: 0 !important;
+      }
 
 /* List */
 

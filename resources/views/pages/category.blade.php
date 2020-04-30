@@ -40,11 +40,19 @@
       			<li><a href="/portfolio">Portfolio</a></li>
       			<li><a href="/contact">Contact</a></li>
       		</ul>
+          <ul class="icons">
+            <li><a href="https://www.instagram.com/primetime_graphic/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+            {{-- <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li> --}}
+          </ul>
           @else
             <ul>
               <li><a href="/portfolio">Portfolio</a></li>
               <li><a href="/contact">Contact</a></li>
               <li><a href="/home">Backend Dashboard</a></li>
+            </ul>
+            <ul class="icons">
+              <li><a href="https://www.instagram.com/primetime_graphic/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+              {{-- <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li> --}}
             </ul>
           @endguest
     	</nav>
