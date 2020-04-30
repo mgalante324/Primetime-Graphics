@@ -2862,11 +2862,17 @@ input, select, textarea {
 			z-index: 10000;
 		}
 
-		#header .title {
+		/* #header .title {
 			text-align: center;
 			text-transform: uppercase;
 			letter-spacing: 0.05em;
-		}
+		} */
+
+    .title {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
 
 		#header .subtitle {
 			text-align: center;
@@ -3418,3 +3424,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 	    transform: rotateX(0);
 	  }
 	}
+
+  .contactForm {
+    margin: 0 10% 0 10%;
+  }
