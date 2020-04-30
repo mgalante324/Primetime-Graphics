@@ -6,7 +6,10 @@
   <div class="container-fluid">
    <div class="row">
     <div class="contact-left">
-      <h1 class="get-in-touch fade">Get in Touch</h1>
+      <div class="get-in-touch fade">
+        {{-- <h1 class="get-in-touch fade">Get in Touch</h1> --}}
+        <img src="{{ asset('images/GetInTouchGraphic.png') }}" class="img-fluid" alt="PrimeTime Graphics">
+      </div>
     </div>
     <div class="contact-right fade">
       <!-- Header -->
@@ -53,7 +56,7 @@
                </ul>
              @endguest
        	</nav>
-        
+
       <!-- Footer -->
         <footer id="footer">
           <div class="inner">
