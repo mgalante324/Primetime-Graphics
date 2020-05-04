@@ -3382,7 +3382,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 	}
 
 	.get-in-touch {
-		margin: 5%;
+		margin: 20%;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3407,10 +3407,16 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 		}
 
 		.get-in-touch {
-			margin: 0;
+			margin: 35%;
 		}
 
 	}
+
+  @media screen and (max-width: 480px) {
+    .get-in-touch {
+			margin: 15%;
+		}
+  }
 
 	.fade {
 	  animation: transitionIn 1.5s;
