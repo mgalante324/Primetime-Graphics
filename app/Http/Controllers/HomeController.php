@@ -34,7 +34,8 @@ class HomeController extends Controller
         }
 
         //Count the number of projects and projects per category
-        $projects = Project::all();
+        // $projects = Project::all();
+        $projects = Project::orderBy('category','asc')->orderBy('name', 'asc')->paginate(10);
         $projectCount = 0;
 
         foreach ($projects as $project) {
